@@ -3,19 +3,48 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var bluetoothMaster: BluetoothMaster
+    
+    @State private var text = ""
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            
+            if let printer = bluetoothMaster.connectedPrinter {
+                
+                ZStack {
+                    Text("Connected to \(printer.name ?? "")")
+                        .fontWeight(.semibold)
+                        .foregroundColor(.green)
+                    
+                    HStack {
+                        Spacer()
+                        Button("Print") {
+                            guard !text.isEmpty else { return }
+                            bluetoothMaster.print(text)
+                        }
+                        .keyboardShortcut("p", modifiers: .command)
+                    }
+                    .padding(.horizontal)
+                }
+
+                TextEditor(text: $text)
+                    .font(.system(size: 20, weight: .semibold))
+                    .background(Color.clear)
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(8)
+                
+            } else if let printer = bluetoothMaster.selectedPrinter {
+                Text("Connecting to \(printer.name ?? "")")
+                ProgressView()
+                    .progressViewStyle(.circular)
+            } else {
+                Text("No printer connected")
+            }
+            
         }
         .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

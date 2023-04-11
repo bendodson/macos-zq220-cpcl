@@ -12,19 +12,12 @@
 		2B0BDDEC29E55D570030A54D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0BDDEB29E55D570030A54D /* Assets.xcassets */; };
 		2B0BDDF029E55D570030A54D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0BDDEF29E55D570030A54D /* Preview Assets.xcassets */; };
 		2B0BDDFA29E55D570030A54D /* ReceiptsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0BDDF929E55D570030A54D /* ReceiptsTests.swift */; };
-		2B0BDE0429E55D570030A54D /* ReceiptsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0BDE0329E55D570030A54D /* ReceiptsUITests.swift */; };
-		2B0BDE0629E55D570030A54D /* ReceiptsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0BDE0529E55D570030A54D /* ReceiptsUITestsLaunchTests.swift */; };
+		2B0BDE1329E561020030A54D /* PrinterScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0BDE1229E561020030A54D /* PrinterScannerView.swift */; };
+		2B0BDE1529E564D80030A54D /* BluetoothMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0BDE1429E564D80030A54D /* BluetoothMaster.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		2B0BDDF629E55D570030A54D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2B0BDDDC29E55D560030A54D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2B0BDDE329E55D560030A54D;
-			remoteInfo = Receipts;
-		};
-		2B0BDE0029E55D570030A54D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2B0BDDDC29E55D560030A54D /* Project object */;
 			proxyType = 1;
@@ -42,9 +35,8 @@
 		2B0BDDEF29E55D570030A54D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B0BDDF529E55D570030A54D /* ReceiptsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReceiptsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0BDDF929E55D570030A54D /* ReceiptsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptsTests.swift; sourceTree = "<group>"; };
-		2B0BDDFF29E55D570030A54D /* ReceiptsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReceiptsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B0BDE0329E55D570030A54D /* ReceiptsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptsUITests.swift; sourceTree = "<group>"; };
-		2B0BDE0529E55D570030A54D /* ReceiptsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2B0BDE1229E561020030A54D /* PrinterScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterScannerView.swift; sourceTree = "<group>"; };
+		2B0BDE1429E564D80030A54D /* BluetoothMaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothMaster.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +54,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B0BDDFC29E55D570030A54D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +62,6 @@
 			children = (
 				2B0BDDE629E55D560030A54D /* Receipts */,
 				2B0BDDF829E55D570030A54D /* ReceiptsTests */,
-				2B0BDE0229E55D570030A54D /* ReceiptsUITests */,
 				2B0BDDE529E55D560030A54D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +71,6 @@
 			children = (
 				2B0BDDE429E55D560030A54D /* Receipts.app */,
 				2B0BDDF529E55D570030A54D /* ReceiptsTests.xctest */,
-				2B0BDDFF29E55D570030A54D /* ReceiptsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +80,8 @@
 			children = (
 				2B0BDDE729E55D560030A54D /* ReceiptsApp.swift */,
 				2B0BDDE929E55D560030A54D /* ContentView.swift */,
+				2B0BDE1229E561020030A54D /* PrinterScannerView.swift */,
+				2B0BDE1429E564D80030A54D /* BluetoothMaster.swift */,
 				2B0BDDEB29E55D570030A54D /* Assets.xcassets */,
 				2B0BDDED29E55D570030A54D /* Receipts.entitlements */,
 				2B0BDDEE29E55D570030A54D /* Preview Content */,
@@ -118,15 +103,6 @@
 				2B0BDDF929E55D570030A54D /* ReceiptsTests.swift */,
 			);
 			path = ReceiptsTests;
-			sourceTree = "<group>";
-		};
-		2B0BDE0229E55D570030A54D /* ReceiptsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2B0BDE0329E55D570030A54D /* ReceiptsUITests.swift */,
-				2B0BDE0529E55D570030A54D /* ReceiptsUITestsLaunchTests.swift */,
-			);
-			path = ReceiptsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,24 +143,6 @@
 			productReference = 2B0BDDF529E55D570030A54D /* ReceiptsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2B0BDDFE29E55D570030A54D /* ReceiptsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2B0BDE0F29E55D570030A54D /* Build configuration list for PBXNativeTarget "ReceiptsUITests" */;
-			buildPhases = (
-				2B0BDDFB29E55D570030A54D /* Sources */,
-				2B0BDDFC29E55D570030A54D /* Frameworks */,
-				2B0BDDFD29E55D570030A54D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2B0BDE0129E55D570030A54D /* PBXTargetDependency */,
-			);
-			name = ReceiptsUITests;
-			productName = ReceiptsUITests;
-			productReference = 2B0BDDFF29E55D570030A54D /* ReceiptsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,10 +157,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					2B0BDDF429E55D570030A54D = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 2B0BDDE329E55D560030A54D;
-					};
-					2B0BDDFE29E55D570030A54D = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 2B0BDDE329E55D560030A54D;
 					};
@@ -223,7 +177,6 @@
 			targets = (
 				2B0BDDE329E55D560030A54D /* Receipts */,
 				2B0BDDF429E55D570030A54D /* ReceiptsTests */,
-				2B0BDDFE29E55D570030A54D /* ReceiptsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,13 +198,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B0BDDFD29E55D570030A54D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -261,6 +207,8 @@
 			files = (
 				2B0BDDEA29E55D560030A54D /* ContentView.swift in Sources */,
 				2B0BDDE829E55D560030A54D /* ReceiptsApp.swift in Sources */,
+				2B0BDE1529E564D80030A54D /* BluetoothMaster.swift in Sources */,
+				2B0BDE1329E561020030A54D /* PrinterScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,15 +220,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B0BDDFB29E55D570030A54D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2B0BDE0629E55D570030A54D /* ReceiptsUITestsLaunchTests.swift in Sources */,
-				2B0BDE0429E55D570030A54D /* ReceiptsUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +227,6 @@
 			isa = PBXTargetDependency;
 			target = 2B0BDDE329E55D560030A54D /* Receipts */;
 			targetProxy = 2B0BDDF629E55D570030A54D /* PBXContainerItemProxy */;
-		};
-		2B0BDE0129E55D570030A54D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2B0BDDE329E55D560030A54D /* Receipts */;
-			targetProxy = 2B0BDE0029E55D570030A54D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -419,6 +353,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Receipts needs access to Bluetooth in order to connect to your printer";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -437,10 +372,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.dodoapps.Receipts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -457,6 +393,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Receipts needs access to Bluetooth in order to connect to your printer";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -475,10 +412,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.dodoapps.Receipts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -528,50 +466,6 @@
 			};
 			name = Release;
 		};
-		2B0BDE1029E55D570030A54D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7V89NHL866;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.dodoapps.ReceiptsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Receipts;
-			};
-			name = Debug;
-		};
-		2B0BDE1129E55D570030A54D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7V89NHL866;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.dodoapps.ReceiptsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Receipts;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -598,15 +492,6 @@
 			buildConfigurations = (
 				2B0BDE0D29E55D570030A54D /* Debug */,
 				2B0BDE0E29E55D570030A54D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2B0BDE0F29E55D570030A54D /* Build configuration list for PBXNativeTarget "ReceiptsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2B0BDE1029E55D570030A54D /* Debug */,
-				2B0BDE1129E55D570030A54D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
